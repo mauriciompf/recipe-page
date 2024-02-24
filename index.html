@@ -10,15 +10,241 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <title>Frontend Mentor | Recipe page</title>
   </head>
   <body>
-    <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    <main class="bg-neutral-eggshell font-outfit">
+      <div>
+        <aside class="absolute top-2 left-2">
+          <button
+            aria-label="Reload"
+            class="p-2 rounded-2xl grid place-items-center"
+          >
+            <i
+              class="text-neutral-light-grey text-3xl fa-solid fa-rotate-right"
+            ></i>
+          </button>
+        </aside>
+        <aside class="fixed right-5 bottom-5">
+          <button
+            aria-label="Open settings"
+            class="bg-neutral-dark-charcoal p-2 rounded-2xl grid place-items-center"
+          >
+            <i class="text-neutral-light-grey text-3xl fa-solid fa-bars"></i>
+          </button>
+        </aside>
+        <!-- <article class="bg-white">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          corrupti reprehenderit in iure deserunt deleniti officia dolorum,
+          praesentium, quod saepe tempora corporis harum. Provident nobis a
+          eligendi necessitatibus explicabo natus.
+        </article> -->
+        <article class="bg-white">
+          <img src="assets/images/image-omelette.jpeg" alt="Omelette" />
+          <div class="mx-auto w-[80%] my-8">
+            <h1
+              class="text-neutral-dark-charcoal text-3xl leading-7 mb-5 font-young-serif"
+            >
+              Simple Omelette Recipe
+            </h1>
+            <div class="grid gap-10">
+              <p class="text-neutral-wenge-brown">
+                An easy and quick dish, perfect for any meal. This classic
+                omelette combines beaten eggs cooked to perfection, optionally
+                filled with your choice of cheese, vegetables, or meats.
+              </p>
+              <div class="p-4 bg-primary-nutmeg/5 rounded-xl">
+                <div class="mb-3 text-primary-dark-raspberry text-xl">
+                  <strong>Preparation time</strong>
+                </div>
+                <ul class="list-disc grid px-6 gap-2">
+                  <li class="text-neutral-wenge-brown pl-4">
+                    <strong>Total:</strong> Approximately 10 minutes
+                  </li>
+                  <li class="text-neutral-wenge-brown pl-4">
+                    <strong>Preparation:</strong> 5 minutes
+                  </li>
+                  <li class="text-neutral-wenge-brown pl-4">
+                    <strong>Cooking:</strong> 5 minutes
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h2 class="font-young-serif text-primary-nutmeg text-2xl mb-5">
+                  Ingredients
+                </h2>
+                <ul class="list-disc grid px-6 gap-2">
+                  <li class="text-neutral-wenge-brown pl-4">2-3 large eggs</li>
+                  <li class="text-neutral-wenge-brown pl-4">Salt, to taste</li>
+                  <li class="text-neutral-wenge-brown pl-4">
+                    Pepper, to taste
+                  </li>
+                  <li class="text-neutral-wenge-brown pl-4">
+                    1 tablespoon of butter or oil
+                  </li>
+                  <li class="text-neutral-wenge-brown pl-4">
+                    Optional fillings: cheese, diced vegetables, cooked meats,
+                    herbs
+                  </li>
+                </ul>
+              </div>
+
+              <hr class="border border-l-neutral-dark-charcoal" />
+
+              <div>
+                <h2 class="font-young-serif text-primary-nutmeg text-2xl mb-5">
+                  Instructions
+                </h2>
+                <ol class="list-decimal grid px-6 gap-2">
+                  <li class="text-neutral-wenge-brown pl-4">
+                    <strong>Beat the eggs:</strong> In a bowl, beat the eggs
+                    with a pinch of salt and pepper until they are well mixed.
+                    You can add a tablespoon of water or milk for a fluffier
+                    texture.
+                  </li>
+                  <li class="text-neutral-wenge-brown pl-4">
+                    <strong>Heat the pan:</strong> Place a non-stick frying pan
+                    over medium heat and add butter or oil.
+                  </li>
+                  <li class="text-neutral-wenge-brown pl-4">
+                    <strong>Cook the omelette:</strong> Once the butter is
+                    melted and bubbling, pour in the eggs. Tilt the pan to
+                    ensure the eggs evenly coat the surface.
+                  </li>
+                  <li class="text-neutral-wenge-brown pl-4">
+                    <strong>Add fillings (optional):</strong> When the eggs
+                    begin to set at the edges but are still slightly runny in
+                    the middle, sprinkle your chosen fillings over one half of
+                    the omelette.
+                  </li>
+                  <li class="text-neutral-wenge-brown pl-4">
+                    <strong>Fold and serve:</strong> As the omelette continues
+                    to cook, carefully lift one edge and fold it over the
+                    fillings. Let it cook for another minute, then slide it onto
+                    a plate.
+                  </li>
+                  <li class="text-neutral-wenge-brown pl-4">
+                    <strong>Enjoy:</strong> Serve hot, with additional salt and
+                    pepper if needed.
+                  </li>
+                </ol>
+              </div>
+
+              <hr class="border border-l-neutral-dark-charcoal" />
+
+              <div class="grid gap-5">
+                <h2 class="font-young-serif text-primary-nutmeg text-2xl">
+                  Nutrition
+                </h2>
+
+                <p class="text-neutral-wenge-brown">
+                  The table below shows nutritional values per serving without
+                  the additional fillings.
+                </p>
+
+                <table class="table-auto border-separate border-spacing-y-3">
+                  <tr>
+                    <td
+                      class="pl-6 pb-2 border-b border-b-neutral-light-grey text-neutral-wenge-brown"
+                    >
+                      Calories
+                    </td>
+                    <td
+                      class="pr-6 pb-2 border-b border-b-neutral-light-grey text-primary-dark-raspberry"
+                    >
+                      <strong>277kcal</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="pl-6 pb-2 border-b border-b-neutral-light-grey text-neutral-wenge-brown"
+                    >
+                      Carbs
+                    </td>
+                    <td
+                      class="pr-6 pb-2 border-b border-b-neutral-light-grey text-primary-dark-raspberry"
+                    >
+                      <strong>0g</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="pl-6 pb-2 border-b border-b-neutral-light-grey text-neutral-wenge-brown"
+                    >
+                      Protein
+                    </td>
+                    <td
+                      class="pr-6 pb-2 border-b border-b-neutral-light-grey text-primary-dark-raspberry"
+                    >
+                      <strong>20g</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pl-6 pb-2 text-neutral-wenge-brown">Fat</td>
+                    <td class="pr-6 pb-2 text-primary-dark-raspberry">
+                      <strong>22g</strong>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- <article class="bg-white">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          corrupti reprehenderit in iure deserunt deleniti officia dolorum,
+          praesentium, quod saepe tempora corporis harum. Provident nobis a
+          eligendi necessitatibus explicabo natus.
+        </article> -->
+      </div>
+    </main>
+
+    <footer class="p-4 grid gap-2 bg-primary-dark-raspberry text-white">
+      <p>
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="underline"
+          ><strong>Frontend Mentor</strong></a
+        >.
+      </p>
+      <p>
+        Coded by
+        <a
+          target="_blank"
+          class="underline"
+          href="https://github.com/mauriciompf"
+        >
+          <strong>Maurício</strong></a
+        >.
+      </p>
+    </footer>
 
     <script type="module" src="src/main.ts"></script>
   </body>
