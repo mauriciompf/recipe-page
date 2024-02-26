@@ -11,6 +11,28 @@ const btnCloseMenu = document.querySelector(
   ".btn-close-menu"
 ) as HTMLButtonElement;
 
+const btnThemeLight = document.querySelector(
+  ".btn-theme-1"
+) as HTMLButtonElement;
+const btnThemeDark = document.querySelector(
+  ".btn-theme-2"
+) as HTMLButtonElement;
+const btnThemeSerpia = document.querySelector(
+  ".btn-theme-3"
+) as HTMLButtonElement;
+
+const BlueActiveClasses = [
+  'before:content-[""]',
+  "before:bg-blue-600",
+  "before:w-5",
+  "before:h-5",
+  "before:absolute",
+  "relative",
+  "before:top-[.22rem]",
+  "before:left-[0.22rem]",
+  "before:rounded-full",
+];
+
 btnOpenMenu.addEventListener("click", () => {
   menuBox.classList.toggle("hidden");
 });
@@ -32,3 +54,16 @@ btnCloseMenu.addEventListener("click", () => {
   paleteBox.classList.toggle("hidden");
   menuBox.classList.remove("left-8");
 });
+
+const toggleBlueActiveClasses = (
+  buttons: HTMLButtonElement[],
+  type: "remove" | "add"
+) => {
+  const classOperation = type === "add" ? "add" : "remove";
+
+  buttons.forEach((button) => {
+    BlueActiveClasses.forEach((className) => {
+      button.classList[classOperation](className);
+    });
+  });
+};
