@@ -67,3 +67,21 @@ const toggleBlueActiveClasses = (
     });
   });
 };
+
+btnThemeLight.addEventListener("click", () => {
+  const otherButtons = [btnThemeSerpia, btnThemeDark];
+  toggleBlueActiveClasses(otherButtons, "remove");
+  toggleBlueActiveClasses([btnThemeLight], "add");
+});
+
+btnThemeDark.addEventListener("click", () => {
+  const otherButtons = [btnThemeSerpia, btnThemeLight];
+  toggleBlueActiveClasses(otherButtons, "remove");
+  toggleBlueActiveClasses([btnThemeDark], "add");
+});
+
+btnThemeSerpia.addEventListener("click", () => {
+  const otherButtons = [btnThemeDark, btnThemeLight];
+  toggleBlueActiveClasses(otherButtons, "remove");
+  toggleBlueActiveClasses([btnThemeSerpia], "add");
+});
