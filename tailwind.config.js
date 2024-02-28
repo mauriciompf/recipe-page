@@ -11,6 +11,7 @@ export default {
         "neutral-eggshell": "hsl(30, 54%, 90%)",
         "neutral-light-grey": "hsl(30, 18%, 87%)",
         "neutral-wenge-brown": "hsl(30, 10%, 34%)",
+        "neutral-serpia": "hsl(31, 42%, 86%)",
         "neutral-dark-charcoal": "hsl(24, 5%, 18%)",
       },
       fontFamily: {
