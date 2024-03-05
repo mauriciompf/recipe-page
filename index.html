@@ -63,7 +63,9 @@
           <div
             class="z-10 menu shadow-xl fixed bg-neutral-wenge-brown right-6 bottom-20 p-4 rounded-2xl before:absolute before:w-6 before:aspect-video before:-bottom-[.75rem] before:right-0 before:border-l-[25px] before:border-l-transparent before:border-t-[25px] before:border-t-neutral-wenge-brown before:border-r-transparent"
           >
-            <div class="palete hidden">
+            <!-- Boxes -->
+
+            <div class="palete boxes hidden">
               <div class="flex gap-3">
                 <button
                   class="btn-close-menu shadow-xl btn-open-menu bg-neutral-dark-charcoal p-2 rounded-2xl grid place-items-center"
@@ -100,6 +102,40 @@
               </ul>
             </div>
 
+            <div class="font-size boxes hidden">
+              <div class="flex gap-3">
+                <button
+                  class="btn-close-menu shadow-xl btn-open-menu bg-neutral-dark-charcoal p-2 rounded-2xl grid place-items-center"
+                >
+                  <i
+                    class="text-neutral-light-grey text-xl fa-solid fa-arrow-left"
+                  ></i>
+                </button>
+                <h3 class="font-young-serif text-2xl text-neutral-rose-white">
+                  Choose Font Size
+                </h3>
+              </div>
+              <ul class="grid gap-3 mt-3">
+                <li
+                  class="flex gap-3 text-white bg-neutral-dark-charcoal rounded-2xl p-2 text-xl"
+                >
+                  <span>Increase Font</span>
+                </li>
+                <li
+                  class="flex gap-3 text-white bg-neutral-dark-charcoal rounded-2xl p-2 text-xl"
+                >
+                  <span>Decrease Font</span>
+                </li>
+                <li
+                  class="flex gap-3 text-white bg-neutral-dark-charcoal rounded-2xl p-2 text-xl"
+                >
+                  <span>Reset Font</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Buttons -->
+
             <div class="grid gap-5">
               <button
                 class="btn-setting btn-open-palete p-2 rounded-xl grid place-items-center bg-primary-nutmeg"
@@ -110,20 +146,12 @@
               </button>
 
               <button
-                class="btn-setting p-2 rounded-xl grid place-items-center bg-primary-nutmeg"
+                class="btn-setting btn-open-font-size p-2 rounded-xl grid place-items-center bg-primary-nutmeg"
               >
                 <i
                   class="text-neutral-rose-white text-2xl fa-solid fa-font"
                 ></i>
               </button>
-
-              <!-- <button
-                class="p-2 rounded-xl grid place-items-center bg-primary-nutmeg"
-              >
-                <i
-                  class="text-neutral-rose-white text-2xl fa-solid fa-paint-roller"
-                ></i>
-              </button> -->
 
               <button
                 class="btn-setting p-2 rounded-xl grid place-items-center bg-primary-nutmeg"
@@ -132,14 +160,6 @@
                   class="text-neutral-rose-white text-2xl fa-solid fa-italic"
                 ></i>
               </button>
-
-              <!-- <button
-                class="p-2 rounded-xl grid place-items-center bg-primary-nutmeg"
-              >
-                <i
-                  class="text-neutral-rose-white text-2xl fa-solid fa-paint-roller"
-                ></i>
-              </button> -->
 
               <button
                 class="btn-setting p-2 rounded-xl grid place-items-center bg-primary-nutmeg"
