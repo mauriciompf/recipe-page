@@ -6,9 +6,6 @@ const btnReset = getElement(".btn-font-reset");
 
 const body = document.body;
 
-const style = window.getComputedStyle(body, null).getPropertyValue("font-size");
-let currentFontSize = parseFloat(style);
-
 const fontSizeClasses: string[] = [
   "text-xs",
   "text-sm",
@@ -18,17 +15,25 @@ const fontSizeClasses: string[] = [
   "text-2xl",
 ];
 
-let i = 0;
+let i = 2;
 
 function increaseFont() {
   i++;
+  applyFontSize();
+}
 
-  const newIndex = fontSizeClasses.indexOf(fontSizeClasses[2]) + i;
+function decreaseFont() {
+  if (i > 0) {
+    i--;
+    applyFontSize();
+  }
+}
 
-  if (newIndex < fontSizeClasses.length) {
-    body.className = fontSizeClasses[newIndex];
-
-    console.log(fontSizeClasses[newIndex]);
+function applyFontSize() {
+  if (i < fontSizeClasses.length) {
+    body.className = fontSizeClasses[i];
+  } else {
+    i = fontSizeClasses.length - 1;
   }
 }
 
@@ -36,4 +41,5 @@ export default () => {
   body.className = fontSizeClasses[2];
 
   btnIncrease.addEventListener("click", increaseFont);
+  btnDecrease.addEventListener("click", decreaseFont);
 };
