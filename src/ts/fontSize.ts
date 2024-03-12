@@ -1,4 +1,5 @@
 import { getElement } from "./getElement";
+import { ElementsToInvert } from "./theme";
 
 const btnIncrease = getElement(".btn-font-increase");
 const btnDecrease = getElement(".btn-font-decrease");
@@ -19,6 +20,7 @@ let i = 2;
 
 function increaseFont() {
   i++;
+
   applyFontSize();
 }
 

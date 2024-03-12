@@ -29,8 +29,18 @@ const li = document.querySelectorAll<HTMLUListElement>(".px-6 li");
 const h2 = document.querySelectorAll<HTMLHeadingElement>("h2");
 const table = getElement<HTMLTableElement>("table");
 const pTable = getElement<HTMLParagraphElement>(".table-paragraph");
+const coTitle = getElement<HTMLDivElement>(".co-title");
 
-const ElementsToInvert = [title, p, ...li, ...h2, table, pTable, btnOpenMenu];
+export const ElementsToInvert = [
+  title,
+  p,
+  ...li,
+  ...h2,
+  table,
+  pTable,
+  btnOpenMenu,
+  coTitle,
+];
 
 export const invertElementsColors = (
   elements: any[],
