@@ -37,8 +37,8 @@
     <title>Frontend Mentor | Recipe page</title>
   </head>
   <body>
-    <main class="font-outfit bg-neutral-serpia">
-      <div class="mx-auto w-[500px]">
+    <div class="font-outfit md:bg-neutral-serpia md:py-10">
+      <div class="mx-auto md:w-[500px] relative">
         <!-- Settings  Button -->
 
         <aside class="md:hidden">
@@ -50,7 +50,7 @@
           </button>
 
           <div
-            class="z-10 menu shadow-xl fixed bg-neutral-wenge-brown right-6 bottom-20 p-4 rounded-2xl before:absolute before:w-6 before:aspect-video before:-bottom-[.75rem] before:right-0 before:border-l-[25px] before:border-l-transparent before:border-t-[25px] before:border-t-neutral-wenge-brown before:border-r-transparent"
+            class="hidden z-10 menu shadow-xl fixed bg-neutral-wenge-brown right-6 bottom-20 p-4 rounded-2xl before:absolute before:w-6 before:aspect-video before:-bottom-[.75rem] before:right-0 before:border-l-[25px] before:border-l-transparent before:border-t-[25px] before:border-t-neutral-wenge-brown before:border-r-transparent"
           >
             <!-- Boxes -->
 
@@ -148,22 +148,13 @@
           </div>
         </aside>
 
-        <!-- <div class="hidden md:block">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
-            corrupti reprehenderit in iure deserunt deleniti officia dolorum,
-            praesentium, quod saepe tempora corporis harum. Provident nobis a
-            eligendi necessitatibus explicabo natus.
-          </p>
-        </div> -->
-
-        <article class="bg-white">
+        <article class="md:rounded-2xl bg-white md:pt-6">
           <img
-            class="md:mx-auto md:w-[95%]"
+            class="md:rounded-2xl md:mx-auto md:w-[90%]"
             src="assets/images/image-omelette.jpeg"
             alt="Omelette"
           />
-          <div class="mx-auto w-[80%] md:w-[95%] py-8">
+          <div class="mx-auto w-[80%] md:w-[90%] py-8">
             <h1
               class="transition-all text-neutral-dark-charcoal text-3xl leading-7 mb-5 font-young-serif"
             >
@@ -306,16 +297,8 @@
             </div>
           </div>
         </article>
-
-        <!-- 
-        <div class="hidden md:block">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
-          corrupti reprehenderit in iure deserunt deleniti officia dolorum,
-          praesentium, quod saepe tempora corporis harum. Provident nobis a
-          eligendi necessitatibus explicabo natus.
-        </div> -->
       </div>
-    </main>
+    </div>
 
     <footer class="p-4 grid gap-2 bg-primary-dark-raspberry text-white">
       <p>
